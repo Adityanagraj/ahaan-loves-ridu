@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Valentine Ayushi 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container"></div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="title animate-fade-in">For My Beautiful Valentine Ayushi </h1>
+                <p class="subtitle animate-fade-in-delay">You make every day special 💖</p>
+                <button class="cta-button animate-fade-in-delay-2" onclick="scrollToNext()">Open My Heart</button>
+            </div>
+            <div class="floating-heart">💕</div>
+        </section>
+
+        <!-- Love Message Section -->
+        <section class="message-section" id="message">
+            <div class="message-card">
+                <h2 class="message-title">My Dearest Love</h2>
+                <div class="message-content">
+                    <p class="message-text">In your eyes, I found my home. In your smile, I found my joy. In your heart, I found my forever.</p>
+                    <p class="message-text">Every moment with you is a treasure, every day a blessing. You are my sunshine, my starlight, my everything.</p>
+                    <p class="message-text">This Valentine's Day, I want you to know that my love for you grows stronger with each passing day. You are the most beautiful person I know, inside and out.</p>
+                </div>
+                <div class="heart-divider">💖</div>
+            </div>
+        </section>
+
+        <!-- Interactive Hearts Section -->
+        <section class="interactive-section">
+            <h2 class="section-title">Click the Hearts 💕</h2>
+            <div class="hearts-grid">
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💖</div>
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💕</div>
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💗</div>
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💝</div>
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💓</div>
+                <div class="interactive-heart" onclick="showLoveMessage(this)">💞</div>
+            </div>
+            <p id="heartMessage" class="heart-message" aria-live="polite"></p>
+        </section>
+
+        <!-- Memories Section -->
+        <section class="memories-section">
+            <h2 class="section-title">Reasons I Love You</h2>
+            <div class="reasons-container">
+                <div class="reason-card">
+                    <div class="reason-icon">✨</div>
+                    <p class="reason-text">Your beautiful smile that lights up my world</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌙</div>
+                    <p class="reason-text">The way you make me feel safe and loved</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">⭐</div>
+                    <p class="reason-text">Your kindness that touches everyone around you</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌸</div>
+                    <p class="reason-text">The way you understand me like no one else</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">💫</div>
+                    <p class="reason-text">Your laughter that fills my heart with joy</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🌺</div>
+                    <p class="reason-text">Every little thing about you makes me happy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="final-section">
+            <div class="final-card">
+                <h2 class="final-title">Will You Be My Valentine?</h2>
+                <div class="button-group">
+                    <button class="yes-button" onclick="handleYes()">Yes! 💕</button>
+                    <button class="no-button" onclick="handleNo()">Maybe Later</button>
+                </div>
+                <div id="celebration" class="celebration hidden"></div>
+                <div id="loveMoment" class="love-moment hidden">
+                    <p class="love-moment-title">Yayyyyy! I love you so much 💖</p>
+                    <div class="love-gif-frame">
+                        <img src="images/6.jpeg" alt="A cute cuddle moment" class="love-image">
+                    </div>
+                    <p class="love-moment-subtitle">This special moment is just for you 💕</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
